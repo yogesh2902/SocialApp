@@ -39,9 +39,6 @@
 //     );
 // }
 
-
-
-import { View, Text } from 'react-native'
 import React from 'react'
 import Login from '../screens/Auth/Login/Login'
 import { createStackNavigator } from '@react-navigation/stack';

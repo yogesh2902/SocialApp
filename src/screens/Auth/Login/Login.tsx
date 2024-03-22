@@ -16,7 +16,7 @@ const Login = (props: Props) => {
     const neynarApiKey = '1BC4AEC2-10F0-4C7D-886D-B77BF6F59C5E'
     const neynarClientId = '9de57566-f2be-4867-bf98-15f4b7f55c22'
 
-
+    // console.log(process?.env?.NEYNAR_API_KEY, "NEYNAR_API_KEY")
     // const CardView = ({ icon, bgColor = colors.blue, isBorderWidth = false }: any) => {
     //     return (
     //         <TouchableOpacity onPress={() => console.log("click card")} style={{ width: '31%', height: 58, justifyContent: 'center', alignItems: 'center', backgroundColor: bgColor, borderWidth: 2, borderColor: isBorderWidth ? colors.gray40 : bgColor, borderRadius: 16 }}>

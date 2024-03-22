@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import React, { useEffect } from 'react'
 import axios from 'axios'
 import { useRoute } from '@react-navigation/native'
+import { GET_USER_DATA } from '../../../config/urls'
 
 type Props = {}
 
@@ -18,7 +19,7 @@ const Home = (props: Props) => {
 
     const getDataFromApi = async () => {
         try {
-            const response = await axios.get(`https://api.neynar.com/v1/farcaster/user?fid=${fid}`, { headers: { 'api_key': neynarApiKey } })
+            const response = await axios.get(`${GET_USER_DATA}${fid}`, { headers: { 'api_key': neynarApiKey } })
             const userData = response?.data?.result
             const convertJson = userData?.json()
             console.log(convertJson, "responseresponseresponseresponseresponseresponse")
@@ -28,6 +29,9 @@ const Home = (props: Props) => {
             console.log(err, "errrrrr")
         }
     }
+
+
+
 
 
     return (
